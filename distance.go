@@ -22,7 +22,7 @@ func DistanceTwoCoordinatesInMeters(longitude1, latitude1, longitude2, latitude2
 	return meter
 }
 
-func DistanceTwoCoordinatesInKilometers(longitude1, latitude1, longitude2, latitude2 float64) (meter uint64) {
+func DistanceTwoCoordinatesInKilometers(longitude1, latitude1, longitude2, latitude2 float64) (kilometer uint64) {
 
 	eQuatorialEarthRadius := 6378.1370
 	d2r := (math.Pi / 180)
@@ -36,6 +36,6 @@ func DistanceTwoCoordinatesInKilometers(longitude1, latitude1, longitude2, latit
 
 	d := eQuatorialEarthRadius * c
 
-	meter = uint64(d)
-	return meter
+	kilometer = uint64(d)
+	return kilometer
 }
